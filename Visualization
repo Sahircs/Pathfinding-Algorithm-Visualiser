@@ -1,4 +1,4 @@
-# Grid is non-weighted and algorithm uses a Queue.
+# Grid is weighted (each node has value of 1) and algorithm uses a Queue. A* uses a heuristic function whereas dijkstra's does not.
 
 import pygame
 from queue import PriorityQueue
