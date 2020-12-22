@@ -108,7 +108,7 @@ def construct_shortest_path(came_from, current, draw):
     while current in came_from:
         current = came_from[current]  # 1st current = end node - backtracks to start node
         current.shortest_path()  # Each current backtracked to = YELLOW
-        draw()  # Doesn't need window parameter as already defined when node created
+        draw()  
 
 def dijkstras_algorithm(draw, grid, start, end):
     count = 0  # If 2 nodes mid-path give the same distance, node with lower count can be be given priority
